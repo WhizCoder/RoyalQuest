@@ -1,8 +1,8 @@
 #include "game.h"
 
-int main(int argc,char* argv[])
+int main(int argc, char* argv[])
 {
-    game g;
-    g.start();
-    return 0;
+	game g;
+	g.start();
+	return 0;
 }

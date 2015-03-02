@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoyalQuest", "RoyalQuest\RoyalQuest.vcxproj", "{8567BB06-C1DD-4422-A95C-616CCE9B1227}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoyalQuest", "RoyalQuest\RoyalQuest.vcxproj", "{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8567BB06-C1DD-4422-A95C-616CCE9B1227}.Debug|Win32.ActiveCfg = Debug|Win32
-		{8567BB06-C1DD-4422-A95C-616CCE9B1227}.Debug|Win32.Build.0 = Debug|Win32
-		{8567BB06-C1DD-4422-A95C-616CCE9B1227}.Release|Win32.ActiveCfg = Release|Win32
-		{8567BB06-C1DD-4422-A95C-616CCE9B1227}.Release|Win32.Build.0 = Release|Win32
+		{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}.Debug|Win32.Build.0 = Debug|Win32
+		{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}.Release|Win32.ActiveCfg = Release|Win32
+		{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

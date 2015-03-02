@@ -10,23 +10,8 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\base.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\bullet.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\enemy.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\game.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\RoyalQuest\player.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\RoyalQuest\base.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\RoyalQuest\bullet.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\RoyalQuest\enemy.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\RoyalQuest\game.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\RoyalQuest\player.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8567BB06-C1DD-4422-A95C-616CCE9B1227}</ProjectGuid>
+    <ProjectGuid>{B6C892AC-8ED5-43B9-95F2-0BF404D349E7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>RoyalQuest</RootNamespace>
   </PropertyGroup>
@@ -56,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\SDL Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL Libraries\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Rahul\Documents\Visual Studio 2013\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Rahul\Documents\Visual Studio 2013\Libraries\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -93,6 +78,21 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="player.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

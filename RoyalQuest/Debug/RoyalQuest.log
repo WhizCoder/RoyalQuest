@@ -1,29 +1,18 @@
-﻿Build started 3/1/2015 1:16:42 PM.
+﻿Build started 3/2/2015 2:02:58 PM.
      1>Project "C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\RoyalQuest\RoyalQuest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\Desktop\RoyalQuest\base.cpp ..\..\..\..\..\Desktop\RoyalQuest\bullet.cpp ..\..\..\..\..\Desktop\RoyalQuest\enemy.cpp ..\..\..\..\..\Desktop\RoyalQuest\game.cpp ..\..\..\..\..\Desktop\RoyalQuest\main.cpp ..\..\..\..\..\Desktop\RoyalQuest\player.cpp
-         player.cpp
-     1>c:\users\rahul\desktop\royalquest\player.cpp(80): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\rahul\desktop\royalquest\player.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-         main.cpp
+         D:\Visual Studio Community 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt game.cpp
          game.cpp
-         enemy.cpp
-     1>c:\users\rahul\desktop\royalquest\enemy.cpp(34): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\rahul\desktop\royalquest\enemy.cpp(35): warning C4018: '<' : signed/unsigned mismatch
-         bullet.cpp
-         base.cpp
-         Generating Code...
        Link:
-         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.lib" /MACHINE:X86 Debug\base.obj
+         D:\Visual Studio Community 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.lib" /MACHINE:X86 Debug\base.obj
          Debug\bullet.obj
          Debug\enemy.obj
          Debug\game.obj
          Debug\main.obj
          Debug\player.obj
-     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
          RoyalQuest.vcxproj -> C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\Debug\RoyalQuest.exe
      1>Done Building Project "C:\Users\Rahul\Documents\Visual Studio 2013\Projects\RoyalQuest\RoyalQuest\RoyalQuest.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.99
+Time Elapsed 00:00:01.67
