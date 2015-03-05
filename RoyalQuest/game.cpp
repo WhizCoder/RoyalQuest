@@ -138,17 +138,19 @@ void game::handleEvents(){
 	}
 }
 
+
+
 void game::loadmap(string path){
 	ifstream in("map.map");
 	if (!in.is_open()){
-		cout << "Problem loading the file";
+		cout << "Problem loading the map";
 	}
 	int width, height;
 	in >> width;
 	in >> height;
 	int current;
-	cout << "Width: " << width << "Height: " << height;
-	for (int i = 0; i<height; i++){
+
+	for (int i = 0; i< height; i++){
 		vector< int > vec;
 		for (int j = 0; j<width; j++){
 			if (in.eof()){
@@ -186,7 +188,7 @@ void game::showmap(){
 		for (int j = 0; j<(int)map[0].size(); j++){
 			if (map[i][j] != 0){
 				SDL_Rect blockrect = { (map[i][j] - 1)*baseclass::TILE_SIZE, 0, baseclass::TILE_SIZE, baseclass::TILE_SIZE };
-				SDL_Rect destinationRect = { j*baseclass::TILE_SIZE - baseclass::coord.x, i * 16 };
+				SDL_Rect destinationRect = { j*baseclass::TILE_SIZE - baseclass::coord.x, i * 16, 16, 16 };
 				SDL_BlitSurface(block, &blockrect, screen, &destinationRect);
 			}
 		}
@@ -200,35 +202,11 @@ void game::start(){
 	loadmap("map.map");
 	//int f1=30;
 	while (running){
+		// cout<<baseclass::coord.x<<" "<<camera.x;
+
 		fpsRegulator = SDL_GetTicks();
 		handleEvents();
-		/*
-		if(direction[0]){
-		if(player1->getBox()->x > 0)
-		player1->setXvel(-5);
-		else{
-		player1->setXvel(0);
-		camera.x -= 5;
-		baseclass::coord.x -= 5;
-		}
-		if(camera.x <= 0)
-		camera.x = 2000 - SCREEN_WIDTH;
-		}
 
-		else if(direction[1]){
-		if(player1->getBox()->x < 80)
-		player1->setXvel(5);
-		else{
-		player1 ->setXvel(0);
-		camera.x += 5;
-		baseclass::coord.x += 5;
-		}
-		if(camera.x >= 2000-SCREEN_WIDTH)
-		camera.x = 0;
-		}
-		else
-		player1->setXvel(0);
-		*/
 		if (direction[0]){
 			if (player1->getBox()->x > SCREEN_WIDTH / 2)
 				player1->setXvel(-5);
@@ -258,8 +236,9 @@ void game::start(){
 		}
 		else
 			player1->setXvel(0);
+
 		//Checking Bullets collision
-		bool noCollision = false;
+		bool noCollision = 0;
 		for (int i = 0; i < (int)map.size(); i++){
 			for (int j = 0; j<(int)map[0].size(); j++){
 				if (map[i][j] == 0)
@@ -286,26 +265,26 @@ void game::start(){
 		player1->move(map);
 		//player running animation
 
-		static int frame_right;
-		static int frame_left;
+		static int f;
+		static int f1;
 		if (player1->walk == true && player1->getDirection() == 'r' && player1->getGround() == true){
 			//running right
-			player1->setFrame(frame_right / 3);
-			cout << endl << "current right frame: " << player1->getFrame();
+			player1->setFrame(f / 3);
+			// cout<<player1->getFrame()<<endl;
 			player1->show(screen);
-			frame_right++;
-			if (frame_right >= 9)
-				frame_right = 0;
+			f++;
+			if (f >= 9)
+				f = 0;
 
 		}
 		else if (player1->walk == true && player1->getDirection() == 'l' && player1->getGround() == true){
 			// running left
-			player1->setFrame(frame_left / 3);
-			cout << endl << "current left frame: " << frame_left;
+			player1->setFrame(f1 / 3);
+			//cout<<endl<<f1;
 			player1->show(screen);
-			frame_left--;
-			if (frame_left <= 23)
-				frame_left = 30;
+			f1--;
+			if (f1 <= 23)
+				f1 = 30;
 		}
 
 		//left and right shooting animation
@@ -332,6 +311,7 @@ void game::start(){
 				}
 			}
 		}
+
 		//Collision of Player with enemies
 		for (int j = 0; j<(int)enemies.size(); j++){
 			SDL_Rect tmpRect = { enemies[j]->getBox()->x - baseclass::coord.x, enemies[j]->getBox()->y, 16, 16 };
@@ -346,6 +326,9 @@ void game::start(){
 				}
 			}
 		}
+
+
+
 		//Moving the enemy 1
 		for (int i = 0; i<(int)enemies.size(); i++){
 			enemies[i]->move(map);
